@@ -1,0 +1,8 @@
+{
+  "org.apache.aries.rsa.discovery.config~PrimaryService": {
+    "endpoint.id": "tcp://localhost:50123",
+    "service.imported.configs": "aries.tcp",
+    "objectClass:String[]": ["org.glimmerveen.osgi.rsa.api.primary.PrimaryService", "org.glimmerveen.osgi.rsa.api.secondary.SecondaryService"]
+//    "objectClass:String[]": ["org.glimmerveen.osgi.rsa.api.primary.PrimaryService"]
+  }
+}

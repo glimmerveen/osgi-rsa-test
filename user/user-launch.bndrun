@@ -1,0 +1,15 @@
+-runfw: org.apache.felix.framework
+-runee: JavaSE-1.8
+
+-runsystemcapabilities: osgi.ee; osgi.ee=JavaSE; version:Version=1.8
+
+-runproperties: logback.configurationFile=file:${.}/logback.xml
+
+-runrequires: \
+  bnd.identity; id=org.glimmerveen.osgi.rsa.user,  \
+  bnd.identity; id=org.apache.felix.gogo.runtime, \
+  bnd.identity; id=org.apache.felix.gogo.shell, \
+  bnd.identity; id=org.apache.felix.gogo.command, \
+  bnd.identity; id=org.apache.aries.rsa.topology-manager, \
+  bnd.identity; id=org.apache.aries.rsa.provider.tcp, \
+  bnd.identity; id=org.apache.aries.rsa.discovery.config
