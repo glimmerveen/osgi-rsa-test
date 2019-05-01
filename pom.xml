@@ -19,12 +19,8 @@
         <bnd.version>4.2.0</bnd.version>
         <failsafe.plugin.version>3.0.0-M3</failsafe.plugin.version>
         <surefire.plugin.version>3.0.0-M3</surefire.plugin.version>
-        <buildhelper.plugin.version>1.7</buildhelper.plugin.version>
         <compiler.plugin.version>3.0</compiler.plugin.version>
         <osgi.version>7.0.0</osgi.version>
-        <eclipse.version>3.8.0.v20120529-1548</eclipse.version>
-        <slf4j.version>1.7.24</slf4j.version>
-        <felix.scr.version>2.1.16</felix.scr.version>
     </properties>
 
     <dependencyManagement>
@@ -102,7 +98,6 @@
                 <artifactId>org.apache.felix.gogo.command</artifactId>
                 <version>1.0.2</version>
             </dependency>
-
 
             <dependency>
                 <groupId>org.apache.felix</groupId>
