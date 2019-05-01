@@ -24,7 +24,8 @@ lists two Java interfaces, whilst the user process only knows about one (the one
 
 The following stacktrace is then raised:
 
-`23:20:01.475 WARN  [          pool-2-thread-1]               org.apache.aries.rsa.core.ClientServiceFactory - Problem creating a remote proxy for [org.glimmerveen.osgi.rsa.api.primary.PrimaryService, org.glimmerveen.osgi.rsa.api.secondary.SecondaryService]
+```
+23:20:01.475 WARN  [          pool-2-thread-1]               org.apache.aries.rsa.core.ClientServiceFactory - Problem creating a remote proxy for [org.glimmerveen.osgi.rsa.api.primary.PrimaryService, org.glimmerveen.osgi.rsa.api.secondary.SecondaryService]
  java.lang.ClassNotFoundException: org.glimmerveen.osgi.rsa.api.secondary.SecondaryService not found by org.glimmerveen.osgi.rsa.user [15]
  	at org.apache.felix.framework.BundleWiringImpl.findClassOrResourceByDelegation(BundleWiringImpl.java:1597)
  	at org.apache.felix.framework.BundleWiringImpl.access$300(BundleWiringImpl.java:79)
@@ -71,4 +72,5 @@ The following stacktrace is then raised:
  	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
  	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
  	at java.base/java.lang.Thread.run(Thread.java:834)
- ERROR: bundle org.glimmerveen.osgi.rsa.user:1.0.0.201904302118 (15)[org.glimmerveen.osgi.rsa.user.internal.User(0)] :  Error during instantiation of the implementation object: Unable to get service for reference $000`
+ ERROR: bundle org.glimmerveen.osgi.rsa.user:1.0.0.201904302118 (15)[org.glimmerveen.osgi.rsa.user.internal.User(0)] :  Error during instantiation of the implementation object: Unable to get service for reference $000
+ ```
